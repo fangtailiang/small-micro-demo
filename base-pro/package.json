@@ -1,0 +1,36 @@
+{
+  "name": "base-pro",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "local": "vite --mode local",
+    "build:uat": "vite build --mode uat",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@micro-zoe/micro-app": "^0.8.11",
+    "axios": "^1.4.0",
+    "crypto-js": "^4.1.1",
+    "d3": "^7.8.5",
+    "element-plus": "^2.3.8",
+    "path": "^0.12.7",
+    "pinia": "^2.1.7",
+    "three": "^0.155.0",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "mockjs": "^1.1.0",
+    "qs": "^6.11.2",
+    "sass": "^1.64.1",
+    "terser": "^5.19.2",
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-vue-components": "^0.25.1",
+    "vite": "^4.4.5",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-mock": "^2.9.6"
+  }
+}
