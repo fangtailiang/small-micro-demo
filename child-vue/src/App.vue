@@ -4,6 +4,7 @@
             <router-link to="/" page-path='/home'>Home</router-link> |
             <router-link to="/page1" page-path='/page1'>Page1</router-link>
         </div>
+        
         <router-view />
     </div>
 </template>

@@ -11,25 +11,36 @@ const router = createRouter({
             component: () => import('@/components/layout/layout.vue'),
             children:[
                 {
-                    path: "/home",
+                    path: "",
                     name: "home",
                     component: () => import('@/views/home/home.vue')
                 },
                 {
-                    path: '/main-vite/:page*',
-                    // name: 'app-vue3',
-                    component: () => import('@/views/child/vue3.vue')
+                    path: 'main-vite/:page*',
+                    component: () => import('@/views/child/vue3.vue'),
+                    meta: { keepAlive: true }
                 },
                 {
-                    path: '/threeDemo1',
+                    path: 'threeDemo1',
                     name: 'demo1',
-                    component: () => import("@/views/threes/demo1.vue")
+                    component: () => import("@/views/threes/demo1.vue"),
+                    meta: { keepAlive: true }
                 },
                 {
-                    path: '/threeMap',
+                    path: 'threeMap/:id',
                     name: 'threeMap',
-                    component: () => import("@/views/threes/sichuan.vue")
+                    component: () => import("@/views/threes/sichuan.vue"),
+                    // meta: { keepAlive: true }
+                    // children:[
+                    //     {
+                    //         path: "map/:id",
+                    //         name: "map",
+                    //         component: () => import('@/views/home/sichuan.vue'),
+                    //         meta: { keepAlive: true }
+                    //     },
+                    // ]
                 }
+                
             ]
           },
           {

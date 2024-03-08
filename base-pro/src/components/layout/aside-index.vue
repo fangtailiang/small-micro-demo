@@ -28,6 +28,7 @@
     name:'AsideIndex'
   })
 
+  let keyId = 0;
   const items = ref([]);
   
   const isCollapse = ref(false)
@@ -35,6 +36,7 @@
   const handleSelect = (key) => {
     router.push({path:key})
   }
+  
   onMounted(() => {
     getMenusfn()
   })

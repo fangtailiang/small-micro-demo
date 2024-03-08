@@ -22,7 +22,7 @@
         mountedMap();
         getMap().then(res => {
             const data = res.data.data;
-            console.log(data);
+            // console.log(data);
             map = createMap(data);
             scene.add(map);
             handleListen();

@@ -19,12 +19,16 @@
 <script setup>
     import { reactive, ref } from 'vue'
     import config from '@/config'
+    
+    import { onBeforeRouteLeave, onBeforeRouteUpdate } from 'vue-router';   
+
     const url = ref(`${config.vue3}/child/vue3/`);
 
     const microAppData = reactive({
         msg: '来自基座的新数据'
     })
-    
+
+
 
     const handleCreate = ()=>{
 

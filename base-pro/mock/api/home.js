@@ -6,7 +6,7 @@ export default [
             const list = [{
                 index:1,
                 name:'首页',
-                path:'/home',
+                path:'/',
                 childrens:null
               },
               {
@@ -27,8 +27,13 @@ export default [
                 {
                     index:302,
                     name:'threeMap',
-                    path:'/threeMap'
-                }
+                    path:'/threeMap/1'
+                },
+                {
+                  index:303,
+                  name:'threeMap2',
+                  path:'/threeMap/12'
+              }
             ]
               }
             ];
