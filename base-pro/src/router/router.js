@@ -21,6 +21,11 @@ const router = createRouter({
                     meta: { keepAlive: true }
                 },
                 {
+                    path: 'child-react/:page*',
+                    component: () => import('@/views/child/react.vue'),
+                    meta: { keepAlive: true }
+                },
+                {
                     path: 'threeDemo1',
                     name: 'demo1',
                     component: () => import("@/views/threes/demo1.vue"),

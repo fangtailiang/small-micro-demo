@@ -16,6 +16,12 @@ export default [
                 childrens:null
               },
               {
+                index:2,
+                name:'子应用-react',
+                path:'/vite-react',
+                childrens:null
+              },
+              {
                 index:3,
                 name:'three',
                 path:'/',
